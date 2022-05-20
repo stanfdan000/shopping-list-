@@ -5,5 +5,4 @@ export function renderItem(item) {
         div.classList.add('bought');
     }
     return div;
-
 }

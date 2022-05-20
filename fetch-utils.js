@@ -53,6 +53,3 @@ export async function createItems(game, quantity) {
 
 
 
-// function checkError({ data, error }) {
-//     return error ? console.error(error) : data;
-// }

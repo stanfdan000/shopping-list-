@@ -12,21 +12,44 @@
     <link rel="stylesheet" href="../styles/home.css">
     <title>Document</title>
 </head>
-
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="../assets/big-logo.png" />
-        </div>
+        <h1>You are logged in!
+            choose your Games!
+        </h1>
     </header>    
     <button id="logout">Logout</button>
     <main>
-        <h1>You are logged in!</h1>
+        <section id="gg">
+            <form id="gameForm">
+                <label> Games: <input type="text" name="game" id="game"/>
+                </label>
+                <label> quantity: <input type="number" name="quantity" id="quantity" min="0"/>
+                </label>
+                <button>Add Item!</button>
+            </form>
+            <button id="delete">Delete list</button>
+        </section>
     </main>
+    <div id="list"><ul></ul> </div>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
     <script type="module" src="./other-page.js"></script>
 </body>
-
 </html>
+
+        
+    
+    
+
+
+
+        
+
+            
+            
+            
+            
+            
+            

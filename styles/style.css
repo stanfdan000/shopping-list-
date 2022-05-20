@@ -14,20 +14,23 @@ body {
     --color5: hsla(224, 40%, 79%, 1); */
     
     --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --shadow: 0px 10px 20px -12px rgb(151, 45, 45);
     --gutter: 30px;
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-image: url(../assets/games.jpeg);
 }
 
 main {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    height: 25px;
+    width: -25px;
 }
 
 section {
@@ -112,9 +115,14 @@ footer {
 }
 
 .auth-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    
+display: flex;
+ flex-direction: row-reverse;
+ justify-content: space-around;
+align-items: flex-start;
+flex-wrap: nowrap;
+align-content: stretch;
+    
 }
 
 .auth-container {

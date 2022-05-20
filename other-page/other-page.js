@@ -24,7 +24,6 @@ gameForm.addEventListener('submit', async (e) => {
     const data = new FormData(gameForm);
     const game = data.get('game');
     const quantity = data.get('quantity');
-    console.log(game, quantity);
     await createItems(game, Number(quantity));
     displayItem();
     gameForm.reset();
@@ -33,7 +32,6 @@ async function displayItem() {
     const games = await getListItems();
     gameList.textContent = '';
     for (let item of games) {
-
         const lists = renderItem(item);
         lists.addEventListener('click', async (e) => {
             e.preventDefault();
@@ -42,8 +40,10 @@ async function displayItem() {
         }); 
         gameList.append(lists);
     }}
-    
 displayItem();
+    
+
+    
     
     
 
